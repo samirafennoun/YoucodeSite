@@ -5,10 +5,10 @@ $(document).ready(function () {
     // Preloader
     
     $(window).load(function () { // makes sure the whole site is loaded
-        $('.page-preloader spinner').fadeOut(); // will first fade out the loading animation
-        $('.page-preloader').delay(350).fadeOut('slow');
+        $('.preload.loader-frame').fadeOut(); // will first fade out the loading animation
+        $('.preload').delay(200).fadeOut('auto');
         // will fade out the white DIV that covers the website.
-        $('body').delay(350).css({
+        $('body').delay(2500).css({
             'overflow': 'visible'
         });
     })
@@ -17,10 +17,10 @@ $(document).ready(function () {
 
     $(".animated-text").typed({
         strings: [
-            "fully responsive",
-            "onepage template",
-            "mobile first",
-            "startup template"
+            "Le bon choix",
+            "Changer ta vie",
+            "Créer votre future",
+            "Atteindre votre objectif"
         ],
         typeSpeed: 40,
         loop: true,
